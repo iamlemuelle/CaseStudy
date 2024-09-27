@@ -13,6 +13,7 @@ colors = ["green", "red", "blue", "yellow", "violet", "indigo"]
 
 y_coor = [-100, -60, -20, 20, 60, 100]
 
+#created a list for a list to hold all the turtles
 all_turtles = []
 
 for i in range(0, 6):
@@ -22,9 +23,11 @@ for i in range(0, 6):
     new_turtle.goto(x=-230, y=y_coor[i])
     all_turtles.append(new_turtle)
 
+#if bet is true, then the race will start
 if bet:
     is_race_on = True
 
+#while the race is on the for loop inside will continue to run.
 while is_race_on:
 
     for turtle in all_turtles:
@@ -40,31 +43,4 @@ while is_race_on:
 
 
 
-
-
-
-#ETCH-A-SKETCH
-# def move_forward():
-#     tim.fd(10)
-#
-# def move_backward():
-#     tim.backward(10)
-#
-# def clockwise():
-#     t = tim.heading() + 10
-#     tim.setheading(t)
-#
-# def counter_clockwise():
-#     t = tim.heading() - 10
-#     tim.setheading(t)
-#
-# def clear():
-#     tim.reset()
-#
-# screen.listen()
-# screen.onkey(key="w", fun=move_forward)
-# screen.onkey(key="s", fun=move_backward)
-# screen.onkey(key="a", fun=clockwise)
-# screen.onkey(key="d", fun=counter_clockwise)
-# screen.onkey(key="c", fun=clear)
 screen.exitonclick()
